@@ -59,12 +59,13 @@ export default function Content() {
         <h1>My first day at work</h1>
         <div className="row">
             <div className="col-6">
-                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} style={{
+                            height: 500
+                        }}>
 
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    height: 500
                     />
                     <Marker position={[51.505, -0.09]}>
                         <Popup>
